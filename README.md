@@ -1,6 +1,6 @@
 # Ribitter-web
 
-live at https://ribbiterweb.herokuapp.com
+Live at http://18.133.188.73:5000/
   
 ## Snippets of UI:
   
