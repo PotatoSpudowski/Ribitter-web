@@ -33,7 +33,7 @@ Live at http://18.133.188.73:5000/
   
   3. Rename config.ini.example to config.ini
   
-  4. Replace config.ini values with your keys from https://developer.twitter.com/en/apps and URL links to Elixr and MisMatch
+  4. Replace config.ini values with your keys from https://developer.twitter.com/en/apps and URL links to Elixr and MisMatch server
   
   5. Install requirements using `pip install -r requirements.txt`
   
