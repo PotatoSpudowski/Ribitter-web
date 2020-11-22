@@ -1,0 +1,6 @@
+[CONFIG]
+consumer_key = '****'
+consumer_secret = '*******'
+callback = '******'
+elixrApi = '*******'
+mismatchApi = '******'

@@ -1,0 +1,46 @@
+<link rel="stylesheet" href="/static/style.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<script>
+    window.addEventListener('load', (event) => {
+        if ('{{txt}}'!=""){
+            document.getElementById('modal').style.display="block"
+        }
+    });
+</script>
+<div class="misinfo" id="modal">
+    <h4>Checking for misinformation...</h4>
+    <hr>
+    <p id="status">{{txt}}</p>
+    <hr>
+    <button class="verifyBtn" style="float: right" onclick="document.getElementById('modal').style.display='none'">close</button>
+    <br>
+</div>
+<div class="w3-sidebar w3-light-grey w3-bar-block" style="width:25%;border-right: 1px solid lightgray;background: #c9ccdf">
+    <h2 class="w3-bar-item" style="font-family: Roboto, Helvetica, Arial, sans-serif">Profile</h2>
+    <div style="display: flex">
+        <img src="{{user.profile_image_url}}" style="margin-left: 16px;"/>&nbsp;&nbsp;
+        <h4 class="w3-bar-item" style="font-family: Roboto, Helvetica, Arial, sans-serif">{{user.name}}</h4>
+    </div>
+    <p class="w3-bar-item" style="font-family: Roboto, Helvetica, Arial, sans-serif">@{{user.screen_name}}</p>
+    <h2 class="w3-bar-item" style="font-family: Roboto, Helvetica, Arial, sans-serif">Filter Tweets</h2>
+    <form action="/labels" method="post"> 
+        <input class="labelInput" type="text" name="array[]" value="" placeholder="Enter labels seperated by ,"/><br> 
+        <button class="labelSubmit" name="button">Filter</button> 
+    </form> 
+</div>
+{% for obj in data %}
+<div class="cardView">
+    <div style="display: flex">
+        <img src="{{obj.user.profile_url}}" style="border-radius: 50%"/>&nbsp;&nbsp;
+        <div style="display: flex;width: 100%">
+            <span style="font-weight: 600">{{obj.user.name}}</span>&nbsp;&nbsp;<p>@{{obj.user.screen_name}}</p>
+            <form action="/misinfo" method="post"> 
+                <input style="display: none" value='{{obj.text}},{{obj.id}}' name='text'/>
+                <button class="verifyBtn">verify</button>
+            </form> 
+        </div>
+    </div>
+    <br>
+    <p>{{obj.text}}</p>
+</div>
+{% endfor %}
