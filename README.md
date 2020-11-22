@@ -10,15 +10,15 @@ live at https://ribbiterweb.herokuapp.com
   
   <h4>Checkout your feed</h4>
   
-  ![Screenshot from 2020-11-22 15-20-46](https://user-images.githubusercontent.com/37112252/99900649-f467d100-2cd6-11eb-9674-68318f7f69a8.png)
+  ![Screenshot from 2020-11-22 17-18-54](https://user-images.githubusercontent.com/37112252/99902903-03ef1600-2ce7-11eb-878c-17df6ddfd4c9.png)
   
   <h4>Verify tweets for misinformation</h4>
   
-  ![Screenshot from 2020-11-22 15-20-54](https://user-images.githubusercontent.com/37112252/99900651-f598fe00-2cd6-11eb-9401-efc28b275077.png)
+  ![Screenshot from 2020-11-22 17-21-35](https://user-images.githubusercontent.com/37112252/99902940-313bc400-2ce7-11eb-81cf-ab94a94b97fe.png)
   
   <h4>Filter data</h4>
   
-  ![1](https://user-images.githubusercontent.com/37112252/99900741-5f190c80-2cd7-11eb-8d65-dd42f3c8319a.png)
+  ![1](https://user-images.githubusercontent.com/37112252/99903003-8972c600-2ce7-11eb-99a9-0f98a12c1e74.png)
   
   
 ## How to run the file on your system:
